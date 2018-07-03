@@ -1,5 +1,5 @@
-"""
-configuration file for project
+﻿"""
+configuration file for project(ignored)
 """
 
 DEBUG = True
