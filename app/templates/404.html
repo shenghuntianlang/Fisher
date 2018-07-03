@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>找不到页面</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon"
+          href="{{ url_for('static', filename='images/icon.png') }}">
+
+    <!-- Modernizr JS -->
+    <script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="{{ url_for('static', filename='js/respond.min.js') }}"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+<div class="container fh5co-container">
+
+    <div class="row">
+        <div class="col-md-12 animate-box" data-animate-effect="fadeIn">
+            <div class="fh5co-404-wrap" id="video" data-vide-bg="{{ url_for('static', filename='video/Crocodile') }}"
+                 data-vide-options="position: 0 50%">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="col-md-12 text-center fh5co-404-text animate-box" data-animate-effect="fadeIn">
+            <h2>{{ error.message | default("虽然不知道为什么,但就是找不到相关资源(〃'▽'〃)") }}</h2>
+            <p><a href="javascript:" onclick="history.back(-1);" class="btn btn-primary">回到上一页</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<!-- Bootstrap -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- Vide -->
+<script src="{{ url_for('static', filename='js/jquery.vide.min.js') }}"></script>
+<!-- Waypoints -->
+<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+<!-- Main JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+</html>
+
